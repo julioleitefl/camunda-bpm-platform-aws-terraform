@@ -37,7 +37,7 @@ locals {
 module "camunda_ecs_fargate" {
   source  = "github.com/chgerkens/terraform-aws-ecs-fargate.git?ref=master"
 
-  name_prefix            = "${var.environment_name}-camunda"
+  name_prefix            = "${var.environment_name}-matinc-mp-hml"
   vpc_id                 = data.aws_vpc.selected.id
   private_subnet_ids     = data.aws_subnet_ids.selected.ids
   lb_arn                 = data.aws_alb.selected.arn

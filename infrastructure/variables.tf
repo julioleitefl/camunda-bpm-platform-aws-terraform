@@ -1,5 +1,5 @@
 variable "aws_region" {
-  description = "Target AWS region name"
+  description = "us-east-1"
 }
 
 variable "aws_profile" {
@@ -9,7 +9,7 @@ variable "aws_profile" {
 
 variable "environment_name" {
   description = "Identifies the target environment. Allows to deploy multiple intfrastructures in the same account."
-  default = "demo"
+  default = "matinc-mp-hml"
 }
 
 variable "app_port" {
